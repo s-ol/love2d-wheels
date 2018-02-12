@@ -1,6 +1,27 @@
 wheels
 ======
-wheels is a set of simplifications for love2d to allow a nice learning curve.
+wheels is a set of simplifications for love2d to allow new learners to gently get comfortable with
+programming.
+
+design philosophy
+-----------------
+- **incremental complexity**  
+  a path to mastering the language should exist on which complexity is only ever slowly introduced.
+  at the same time the abilities the complexity grants need to increase constantly, and this should
+  drive learning rather than the complexity that remains to be taught.
+- **no boilerplate**  
+  boilerplate locks learners in with a feeling of non-understanding from the start.
+  if necessary, it is better to complicate the advanced case rather than the simple.
+- **visual feedback as soon as possible**  
+  visualizations allow for a much more engaging programming experience for learners.
+  interesting compositions provide a clear result that learners can value for continous motivation.
+
+wheels is designed to be slowly outgrown, piece by piece.
+
+by design, it can be used first to explore simple text-mode Lua programs, then statically drawn 2d
+imagery and finally realtime animations and interactive programs.
+these successive feature(-sets) are always *opt-in* so that no boilerplate is necessary to use the
+lesser ones.
 
 riding with wheels
 ------------------
@@ -13,7 +34,7 @@ require('wheels')
 -- your code here
 ```
 
-wheels and lua give you many functions to program with. here is a list:
+wheels and Lua give you many functions to program with. here is a list:
 
 ### `print(...)`
 print all arguments to the terminal.
