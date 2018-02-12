@@ -4,7 +4,7 @@ require 'love.graphics'
 local wheels = {}
 
 function wheels.openWindow(width, height)
-  love.window.setMode(width, height)
+  love.window.setMode(width, height, { msaa = 4 })
   love.graphics.clear()
   love.graphics.origin()
 end
@@ -17,10 +17,12 @@ wheels.getMouseXY     = love.mouse.getPosition
 local graphics = {}
 graphics.point     = love.graphics.point
 graphics.line      = love.graphics.line
-function graphics.rectangle(...) return love.graphics.rectangle('line', ...) end
-function graphics.fillRectangle(...) return love.graphics.rectangle('fill', ...) end
-function graphics.circle(...) return love.graphics.circle('line', ...) end
-function graphics.fillCircle(...) return love.graphics.circle('fill', ...) end
+function graphics.rectangle(x, y, w, h) love.graphics.rectangle('line', x-w/2, y-h/2, w, h) end
+function graphics.fillRectangle(x, y, w, h) love.graphics.rectangle('fill', x-w/2, y-h/2, w, h) end
+function graphics.circle(...) love.graphics.circle('line', ...) end
+function graphics.fillCircle(...) love.graphics.circle('fill', ...) end
+function graphics.ellipse(...) love.graphics.ellipse('line', ...) end
+function graphics.fillEllipse(...) love.graphics.ellipse('fill', ...) end
 
 function graphics.fillBackground(...)
   love.graphics.push 'all'

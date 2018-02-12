@@ -56,11 +56,15 @@ draw a point at the (x, y) coordinates.
 draw a line from (a\_x, a\_y) to (b\_x, b\_y).
 
 ### `rectangle(x, y, width, height)` and `fillRectangle(x, y, width, height)`
-draw a rectangle with the top-left corner at (x, y) and the specified width and height.
+draw a rectangle with the center at (x, y) and the specified width and height.
 you can choose to draw it as four lines or fill it in.
 
 ### `circle(x, y, radius)` and `fillCircle(x, y, radius)`
 draw a circle with the center at (x, y) and the specified radius.
+you can choose to draw it as one line or fill it in.
+
+### `ellipse(x, y, radiusx, radiusy)` and `fillEllipse(x, y, radiusx, radiusy)`
+draw an ellipse with the center at (x, y) and the specified radii.
 you can choose to draw it as one line or fill it in.
 
 ### `fillBackground(color)` or `fillBackground(red, green, blue)`
