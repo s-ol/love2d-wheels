@@ -11,7 +11,8 @@ design philosophy
   drive learning rather than the complexity that remains to be taught.
 - **no boilerplate**  
   boilerplate locks learners in with a feeling of non-understanding from the start.
-  if necessary, it is better to complicate the advanced case rather than the simple.
+  if necessary, it is better to complicate the advanced case rather than the simple case.
+  wheels are designed to be shed eventually. when wheels is holding you back, you can drop them and move on.
 - **visual feedback as soon as possible**  
   visualizations allow for a much more engaging programming experience for learners.
   interesting compositions provide a clear result that learners can value for continous motivation.
@@ -45,7 +46,7 @@ create the window to draw in with the given size
 ### `setColor(color)` or `setColor(red, green, blue)`
 set the current color to draw with.
 you can either use color names like `setColor('red')` or give three numbers.
-each number represents the amount of red, green and blue in the mix and should be from 0 to 255.
+each number represents the amount of red, green and blue in the mix and should be from 0 to 1.
 the available color names are: `white`, `silver`, `gray`, `black`, `red`, `maroon`, `yellow`,
 `olive`, `lime`, `green`, `aqua`, `teal`, `blue`, `navy`, `fuschia`, and `purple`.
 
